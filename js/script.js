@@ -53,3 +53,13 @@ function newElement() {
         }
     }
 }
+
+// Selected querys to change with the theme
+check.addEventListener('change', () => {
+    document.querySelector('.logo').classList.toggle('dark');
+    document.querySelector('.header').classList.toggle('dark');
+    document.querySelector('.link').classList.toggle('dark');
+    document.querySelector('.mainContent').classList.toggle('dark');
+    document.querySelector('.title').classList.toggle('dark');
+    document.querySelector('#addButton').classList.toggle('dark');
+})

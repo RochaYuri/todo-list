@@ -16,10 +16,15 @@
             <div class="logo">
                 <h2>ToDo List</h2>
             </div>
-            <div class="navButtons">
-                <button class="button"><a class="link" target="_blank" href="#" >Repositório</a></button>
-                <!--THEME-->
+            <div class="theme"> <!--theme checkbox-->
+                <input type="checkbox" class="checkbox" id="check"/>
+                <label class="label" for="check">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
             </div>
+            <button class="button"><a class="link" target="_blank" href="https://github.com/RochaYuri/todo-list" >Repositório</a></button>
         </nav>
     </header>
     <main class="mainContent">
@@ -29,12 +34,12 @@
             </div>
             <div class="add">
                 <input type="text" id="itemName" placeholder="Item...">
-                <span onclick="newElement()" id="addButton">Adicionar</span>
+                <span onclick="newElement()" id="addButton">Adicionar</span> <!--Button calling the function who add the elemeent-->
             </div>
             <div class="content">
                 <ul id="list">
                     <li>exemplo</li>
-                    <li class="checked">exemplo 2</li>
+                    <li class="checked">exemplo 2</li> <!--example of the checked item-->
                 </ul>
             </div>
         </section>
@@ -43,5 +48,6 @@
         <p>Código aberto, não permitido para fins comerciais!</p>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> <!--icons of theme choose-->
 </body>
 </html>

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
@@ -17,14 +19,15 @@
                 <h2>ToDo List</h2>
             </div>
             <div class="theme"> <!--theme checkbox-->
-                <input type="checkbox" class="checkbox" id="check"/>
+                <input type="checkbox" class="checkbox" id="check" />
                 <label class="label" for="check">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
                     <div class="ball"></div>
                 </label>
             </div>
-            <button class="button"><a class="link" target="_blank" href="https://github.com/RochaYuri/todo-list" >Repositório</a></button>
+            <button class="button"><a class="link" target="_blank"
+                    href="https://github.com/RochaYuri/todo-list">Repositório</a></button>
         </nav>
     </header>
     <main class="mainContent">
@@ -34,7 +37,8 @@
             </div>
             <div class="add">
                 <input type="text" id="itemName" placeholder="Item...">
-                <span onclick="newElement()" id="addButton">Adicionar</span> <!--Button calling the function who add the elemeent-->
+                <span onclick="newElement()" id="addButton">Adicionar</span>
+                <!--Button calling the function who add the elemeent-->
             </div>
             <div class="content">
                 <ul id="list">
@@ -45,9 +49,14 @@
         </section>
     </main>
     <footer class="footer">
-        <p>Código aberto, não permitido para fins comerciais!</p>
+        <div class="copyright">
+            <p id="copyright">Site desenvolvido por <a target="_blank" href="https://github.com/RochaYuri">RochaYuri</a>
+                || Código aberto no <a target="_blank" href="https://github.com/RochaYuri/todo-list">GitHub</a>!</p>
+        </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> <!--icons of theme choose-->
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <!--icons of theme choose-->
 </body>
+
 </html>
